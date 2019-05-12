@@ -1,0 +1,123 @@
+
+  
+  .why{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Alegreya Sans;
+    margin-top: -25px;
+  
+    svg{
+      height: 70px;
+      fill:  #f2f5f4;
+      stroke:  #2a2a29;
+      margin-top: 26px;
+      margin-left: -87px;
+      }
+  }
+  
+  .why-answer__item-pict{
+    position: relative;
+  }
+  
+  
+  .why-question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  
+  .why-question__header{
+    color: #0d0d0d;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .why-question__text{
+    color:#666666;
+    font-size: 18px;
+    text-align: center;
+    line-height: 22px;
+    padding-left: 11px;
+    width: 50%;
+  }
+  
+  .why-answer__list{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-answer__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 62px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+  .why-answer__item-pict{
+    position: relative;
+    background-color: #f2f5f4;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+  }
+
+  .why-answer__item-pict--middle::after{
+ content: '';
+ background-image: url('../../img/circles.png');
+ width: 80px;
+ height: 26px;
+ position: absolute;
+ top: 39%;
+ right: -126%;
+  }
+
+  
+  .why-answer__item-pict--middle::before{
+    content: '';
+    background-image: url('../../img/circles.png');
+    width: 80px;
+    height: 26px;
+    position: absolute;
+    top: 39%;
+    right: 149%;
+     }
+  
+  .why-answer__item-header{
+    font-size: 27px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  
+  .why-answer__item-text{
+    color:#666666;
+    font-size: 18px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: light;
+  }
+  
+  .why-pattern__leaf{
+    position: absolute;
+    top: 103px;
+    left: -78px;
+  }
+  
+  .why-pattern__berry{
+    position: absolute;
+    top: 360px;
+    left: -79px;
+  
+  }

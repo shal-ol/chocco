@@ -1,0 +1,20 @@
+@font-face{
+  font-family: 'MuseoSansCyrl-500';  
+  src: url('../fonts/MuseoSansCyrl-500.ttf');  
+  src: url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+  }
+  
+@import "_misc/normalize.scss";
+@import "_misc/header.scss";
+@import "_misc/layout.scss";
+@import "_misc/logo.scss";
+@import "_misc/phone.scss";
+@import "_misc/nav.scss";
+@import "_misc/nav__sidebar.scss";
+@import "_misc/welcome.scss";
+@import "_misc/why.scss";
+@import "_misc/review.scss";
+
+

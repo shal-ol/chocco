@@ -1,0 +1,15 @@
+.nav__menu {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    .nav__item{
+padding: 0px 13px;
+
+    }
+    .nav__item-link{
+      color: #ffffff;
+      font-size: 18px;
+      z-index: 2;
+    }
+  }

@@ -1,0 +1,126 @@
+.review__conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   height: 100%;
+  }
+  
+  .review{
+    position: relative;
+    font-family: Alegreya Sans; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .review__header{
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    font-weight: bold;
+    margin-top: 69px;
+    margin-bottom: 40px;
+  }
+  
+  .review-item{
+    position: relative;
+    display: flex;
+    text-align: left;
+    padding: 5%;
+    &::before {
+      content: '';
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -54px;
+    left: 45%;
+    }
+  }
+  
+    .review-item{
+      background-color: #f8faf9;
+      margin-bottom: 31px;
+    }
+  
+    .review-item__photo{
+      img{
+        display: block;
+        max-width: 100%;
+      }
+      width: 252px;
+      height: 262px;
+  object-fit: cover;
+  margin-right: 18px;
+    }
+  
+  .review-item__content-title {
+    font-size: 29.96px;
+    color: #323232;
+    margin-top: 10px;
+    margin-bottom: 18px;
+   
+  }
+  .review-item__content-text, .review-item__content-autor {
+    font-size: 17.98px;
+    color: #666666;
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+  
+  .review-item__content{
+  max-width: 52%;
+  }
+  .review-item__pattern{
+    position: absolute;
+    top: -2px;
+    right: 0px;
+  }
+  
+  .review-autors__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .review-autors__list-item {
+    margin-right: 23px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+  
+  .review-autors__list-photo{
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50%;
+    border: 8px solid transparent;
+  }
+  
+   .review-autors__list-photo--active{
+    border: 8px solid #0f5a47;
+    border-radius: 50%;
+    width: 111px;
+    height: 111px;
+   }
+  
+  .review__pattern-leaf{
+  position: absolute;
+  bottom: -273px;
+  left: -81px;
+  }
+  .review__pattern-berry{
+    position: absolute;
+    bottom: -204px;
+    left: -76px;
+  }
+  .review__pattern-strawberry{
+    position: absolute;
+    top: -85px;
+    right: -76px;
+  }

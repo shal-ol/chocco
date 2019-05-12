@@ -1,0 +1,22 @@
+
+  .phone{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: baseline;
+  }
+    .phone__svg{
+      height: 13px;
+      width: 13px;
+      fill: #ffffff;
+      stroke: #ffffff;
+      margin-right: 4px;
+      }
+
+  .phone__number{
+    font-size: 24px; 
+    color: #ffffff;
+    font-family: Alegreya Sans;
+  }
+  
+ 
