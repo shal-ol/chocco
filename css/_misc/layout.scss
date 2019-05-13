@@ -60,12 +60,15 @@ h6{
   }
 
   .section{
+    position: relative;
       height: 100vh;
       min-height: 650px;
+
+   
   }
 
 .conteiner{
-    position: relative;
+
     width: 940px;
     margin: 0 auto;
  

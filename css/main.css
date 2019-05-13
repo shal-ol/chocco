@@ -368,11 +368,11 @@ p {
   padding: 0; }
 
 .section {
+  position: relative;
   height: 100vh;
   min-height: 650px; }
 
 .conteiner {
-  position: relative;
   width: 940px;
   margin: 0 auto; }
 
@@ -419,8 +419,8 @@ p {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 53%;
-  right: 155px;
+  top: 31%;
+  right: 32px;
   z-index: 3; }
 .nav__sidebar .nav__item::after {
   content: '';
@@ -455,7 +455,6 @@ p {
   color: #ffffff; }
 
 .welcome__content {
-  position: relative;
   display: flex; }
 
 .welcome__txt {
@@ -525,17 +524,17 @@ p {
   position: absolute; }
 
 .welcome__pict-leaf {
-  top: 263px;
-  right: -69px;
+  bottom: -50px;
+  right: 11px;
   z-index: 1; }
 
 .welcome__pict-leafs {
-  top: -84px;
-  right: -83px; }
+  bottom: 2px;
+  right: -2px; }
 
 .welcome__pict-berry {
-  top: 321px;
-  right: 7px;
+  bottom: -40px;
+  right: 87px;
   z-index: 1; }
 
 .why {
@@ -552,9 +551,6 @@ p {
     stroke: #2a2a29;
     margin-top: 26px;
     margin-left: -87px; }
-
-.why-answer__item-pict {
-  position: relative; }
 
 .why-question {
   display: flex;
@@ -633,13 +629,13 @@ p {
 
 .why-pattern__leaf {
   position: absolute;
-  top: 103px;
-  left: -78px; }
+  bottom: 122px;
+  left: 0px; }
 
 .why-pattern__berry {
   position: absolute;
-  top: 360px;
-  left: -79px; }
+  bottom: -134px;
+  left: 2px; }
 
 .review__conteiner {
   display: flex;
@@ -738,17 +734,17 @@ p {
 
 .review__pattern-leaf {
   position: absolute;
-  bottom: -273px;
-  left: -81px; }
+  bottom: -238px;
+  left: 0px; }
 
 .review__pattern-berry {
   position: absolute;
-  bottom: -204px;
-  left: -76px; }
+  bottom: -171px;
+  left: 3px; }
 
 .review__pattern-strawberry {
   position: absolute;
-  top: -85px;
-  right: -76px; }
+  top: -87px;
+  right: 4px; }
 
 /*# sourceMappingURL=main.css.map */

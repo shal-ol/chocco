@@ -17,11 +17,7 @@
       margin-left: -87px;
       }
   }
-  
-  .why-answer__item-pict{
-    position: relative;
-  }
-  
+
   
   .why-question{
     display: flex;
@@ -111,13 +107,12 @@
   
   .why-pattern__leaf{
     position: absolute;
-    top: 103px;
-    left: -78px;
+    bottom: 122px;
+    left: 0px;
   }
   
   .why-pattern__berry{
     position: absolute;
-    top: 360px;
-    left: -79px;
-  
+    bottom: -134px;
+    left: 2px;
   }
