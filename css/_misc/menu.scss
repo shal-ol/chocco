@@ -1,0 +1,103 @@
+.menu{
+    position: relative;
+    font-family: Alegreya Sans;
+    display: flex; 
+    justify-content: start;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(../../img/menu_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    flex-direction: row;
+margin-bottom: rem(12px);
+  }
+
+  .menu__accordeon{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+right:  0;
+width: 76%;
+height: 100%; 
+@include tablets {
+  width: 100%;
+
+}
+// @include phones {
+// width: 50%;
+// }
+}
+
+  
+  .menu__list,  .menu__item{
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .menu__header{
+    position: absolute;
+    color: #ffffff;
+    width: 13%;
+    top: rem(86px);
+    left: rem(82px);
+  }
+
+
+
+  .menu__item-title  {
+    font-size: rem(47.94px);
+    transform: translateY(rem(25px)) rotate(-90deg);
+     white-space: nowrap;
+     padding-top: rem(12px);
+     transform-origin: 0 0;
+
+  }
+
+  .menu__item-bg{
+    display: flex;
+    align-items: flex-end;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: rem(100px);  
+    &--milk{
+    background-image: url(../../img/menu_milk_bg.png);
+  }
+  &--fruit{
+    background-image: url(../../img/menu_fruit_bg.png);
+  }
+  &--berry{
+    background-image: url(../../img/menu_berry_bg.png);
+  }
+  }
+  .menu__item-descr{
+    font-size: rem(16px);
+    text-align: left;
+    line-height: rem(23.97px);
+    padding: rem(50px) rem(32px);
+
+
+   }
+
+   .menu__hidden {
+     display: flex;
+     align-items: flex-start;
+     width: 0;
+     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: 100%;
+
+.menu__item-bg{
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #404040;
+}
+    
+    
+     &--active{
+       width:100%;
+     }
+   }

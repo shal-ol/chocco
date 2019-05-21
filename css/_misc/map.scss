@@ -1,0 +1,19 @@
+.map{
+
+   background-color: #cfdeda;
+	min-height: 33.25rem;
+   display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+	
+	@include phones {
+		min-height: 24.25rem;
+    }
+}
+
+.map__img{
+	display: block;
+	width: 100%;
+}

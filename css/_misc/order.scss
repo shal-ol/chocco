@@ -1,0 +1,53 @@
+.order{
+    position: relative;
+    font-family: Alegreya Sans;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../img/order_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0f5a47;
+    flex-direction: column;
+    font-size: rem(18.03px);
+  }
+
+
+
+  .order__header{
+      color: #0f5a47;
+      margin-bottom: rem(34px);
+    
+    @include phones {
+        margin-top: 5rem;
+  }
+  }
+
+  .order__pattern-berry{
+      position: absolute;
+      left: rem(10px);
+      bottom: rem(37px);
+      @include tablets {
+display: none;
+      
+      }
+      @include phones {
+        display: none;
+    }
+       }
+
+       .order__pattern-leaf{
+        position: absolute;
+        right: rem(3px);
+        bottom: rem(91px);
+        @include tablets {
+            display: none;
+                  
+                  }
+@include phones {
+    display: none;
+}
+                   }
+         
+        

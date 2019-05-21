@@ -1,9 +1,15 @@
 .logo{
     font-family: MuseoSansCyrl-500;
     text-transform: uppercase;
-    width: 60px;
-    font-size: 24px;
-    line-height: 21px;
+    width: rem(60px);
+    font-size: rem(24px);
+    line-height: rem(21px);
     color: inherit;
-    margin-right: -15px;
+    margin-right: rem(-15px);
+  z-index: 3;
+    
+    @include phones {
+      margin-left: rem(31px);
+      margin-right: rem(0px);
+    }
   } 

@@ -7,17 +7,18 @@
     justify-content: center;
     align-items: center;
     font-family: Alegreya Sans;
-    margin-top: -25px;
+    margin-top: rem(-25px);
   
     svg{
-      height: 70px;
+      height: rem(70px);
       fill:  #f2f5f4;
       stroke:  #2a2a29;
-      margin-top: 26px;
-      margin-left: -87px;
-      }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
   }
-
+  }
   
   .why-question{
     display: flex;
@@ -25,28 +26,45 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
   }
   
   .why-question__header{
     color: #0d0d0d;
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
+    @include tablets {
+      font-size: rem(48px);
+    }
+    @include phones {
+      font-size: rem(40px);
+    }
   }
   
   .why-question__text{
     color:#666666;
-    font-size: 18px;
+    font-size: rem(18px);
     text-align: center;
-    line-height: 22px;
-    padding-left: 11px;
-    width: 50%;
+    line-height: rem(22px);
+    padding-left: rem(11px);
+    width: 55%;
+    @include phones {
+      width: 83%;
+    }
   }
   
   .why-answer__list{
     display: flex;
     justify-content: center;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   .why-answer__item{
@@ -55,64 +73,115 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-    margin-right: 62px;
+    margin-right: rem(62px);
     &:last-child{
-      margin-right: 0px;
+      margin-right: rem(0px);
     }
+    @include tablets {
+      margin-right: rem(0px);
+      width: 40%;
+      margin-bottom: 3.5rem;
+    }
+   @include phones {
+    margin-right: 0rem;
+    width: 55%;
+    margin-bottom: 3.5rem;
+   }
   }
   .why-answer__item-pict{
     position: relative;
     background-color: #f2f5f4;
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     border-radius: 50%;
-    margin-bottom: 26px;
+    margin-bottom: rem(26px);
+    @include phones {
+      width: 8.8125rem;
+      height: 8.8125rem;
+      margin-bottom: 1.5rem;
+    }
   }
+
 
   .why-answer__item-pict--middle::after{
  content: '';
  background-image: url('../../img/circles.png');
- width: 80px;
- height: 26px;
+ width: rem(80px);
+ height: rem(26px);
  position: absolute;
  top: 39%;
  right: -126%;
+ @include tablets {
+  display: none;
+}
+@include phones {
+  display: none;
+}
   }
 
   
   .why-answer__item-pict--middle::before{
     content: '';
     background-image: url('../../img/circles.png');
-    width: 80px;
-    height: 26px;
+    width: rem(80px);
+    height: rem(26px);
     position: absolute;
     top: 39%;
     right: 149%;
+    @include tablets {
+      display: none;
+    }
+    @include phones {
+      display: none;
+    }
      }
   
   .why-answer__item-header{
-    font-size: 27px;
+    font-size: rem(27px);
     color: #000000;
     font-weight: bold;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
+    @include tablets {
+      margin-bottom: 1.5rem;
+    }
+   @include phones {
+    margin-bottom: 0.5rem;
+   }
   }
+
   
   .why-answer__item-text{
     color:#666666;
-    font-size: 18px;
+    font-size: rem(18px);
     text-align: center;
-    line-height: 22px;
+    line-height: rem(22px);
     font-weight: light;
   }
   
   .why-pattern__leaf{
     position: absolute;
-    bottom: 122px;
-    left: 0px;
+    bottom: rem(122px);
+    left: rem(0px);
+    z-index: 1;
+    @include tablets {
+      bottom: 41.625rem;
+    }
+    @include phones {
+      bottom: 43.625rem;
+      left: -1rem;
+   }  
   }
   
   .why-pattern__berry{
     position: absolute;
-    bottom: -134px;
-    left: 2px;
+    bottom: rem(-134px);
+    left: rem(2px);
+    z-index: 1;
+    @include tablets {
+      bottom: -5.375rem;
+    }
+    @include phones {
+      bottom: -8.375rem;
+      left: -2.875rem;
+   }  
   }

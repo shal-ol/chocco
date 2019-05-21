@@ -1,0 +1,164 @@
+.command {
+    position: relative;
+    min-height: rem(770px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: Alegreya Sans; 
+    @include tablets {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    }
+    @include phones {
+        margin-left: 0rem;;
+    }
+}
+
+.command__header{
+
+margin-bottom: rem(56px);
+@include tablets {
+margin-bottom: 3rem;
+      }
+@include phones {
+margin-bottom: 3rem;
+}
+
+}
+.command__accordeon,
+.command__list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    @include tablets {
+    flex-wrap: wrap;
+    justify-content: center;
+      }
+     // @include phones {
+     // flex-wrap: wrap;
+    // justify-content: center;
+     // }
+
+}
+
+.command__list{
+@include tablets {
+margin-right: -2rem;;
+}
+}
+
+.command__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.command__item{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: rem(11px);
+    &:last-child{
+    margin-right: 0;
+}
+&:nth-of-type(even){
+transform: translateY(15%);
+@include tablets {
+transform: none;
+margin-right: 1.6875rem;
+ 
+}
+@include phones {
+transform: none;
+
+}
+
+}
+@include tablets {
+    width: 30%;
+    margin-right: 1.6875rem;
+    margin-bottom: 2rem;
+      }
+    @include phones {
+        width: 45%;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.command__photo{
+    width: 100%;
+    margin-bottom: rem(20px);
+    @include phones {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.command__name{
+color: #323232;
+font-size: rem(21px);
+position: relative;
+height: 100%;
+text-align: center;
+&::after{
+    content: ''; 
+    position: absolute; 
+    right: rem(22px);
+    bottom: rem(5px);
+    border: rem(5px) solid transparent;
+    border-top: rem(7px) solid #0f5a47;
+}
+}
+
+.command__hidden{
+    height: 0; 
+    overflow: hidden; 
+    text-align: center;
+}
+
+.command__text--active{
+    .command__hidden{
+        height: 100%;
+    }
+    .command__name::after{
+        content: ''; 
+        position: absolute; 
+        right: rem(22px);
+        bottom: rem(9px);
+        border: rem(5px) solid transparent;
+        border-bottom: rem(7px) solid #0f5a47;
+    }
+}
+
+
+
+.command__prof{
+    color: #281e1e;
+    font-size: rem(18px); 
+    width: 100%;
+}
+
+.command__descr{
+    color: #666666;
+    font-size: rem(17.98px); 
+    width: 100%;
+}
+
+.command__pattern-berry{
+    position: absolute;
+    left: rem(36px);
+    bottom: rem(-43px);
+    z-index: 1;
+    @include tablets {
+        width: rem(83px);
+      //  width: 5rem;
+        left: 2rem;
+        bottom: -7.3rem;
+    
+    }
+    // @include phones {
+    // width: 50%;
+    // }
+}

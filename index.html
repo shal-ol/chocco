@@ -60,7 +60,7 @@
 								</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__item-link">
+								<a href="#command" class="nav__item-link">
 									<div class="nav__item-text">Команда</div>
 								</a>
 							</li>
@@ -70,7 +70,7 @@
 								</a>
 							</li>
 							<li class="nav__item">
-							  <a href="#" class="nav__item-link">
+							  <a href="#review" class="nav__item-link">
 								  <div class="nav__item-text">Отзывы</div>
 								</a>
 							</li>
@@ -92,7 +92,9 @@
 						</svg>
 						<a href="tel:+78009039090" class="phone__number">8 800 903 90 90</a>
 					</div>
+					
 				</header>
+				
 				<div class="welcome__content">
 					<div class="welcome__txt">
 					<h1 class="welcome__header">натуральные  шоколадные  батончики</h1>
@@ -133,11 +135,14 @@
 			<img src="/img/leafs_bg2.png" alt="" class="welcome__pict-leaf">
 			<img src="/img/leaf_bg.png" alt="" class="welcome__pict-leafs">
 			<img src="/img/berry.png" alt="" class="welcome__pict-berry">
+			<img src="/img/wel_leaf1_768.png" alt="" class="welcome__pict-leaf768">
+			<img src="/img/wel_leaf2_768.png" alt="" class="welcome__pict-leafs768">
+			<img src="/img/wel_berry768.png" alt="" class="welcome__pict-berry768">
 		</section>
 		<section class="why section">
 			<div class="conteiner">			
 				<article class="why-question">
-					<div class="why-question__header">
+					<div class="section__header">
 						почему chocco?
 					</div>
 					<div class="why-question__text">
@@ -148,7 +153,7 @@
 					<ul class="why-answer__list">
 						<li class="why-answer__item">
 							<div class="why-answer__item-pict">
-								<svg>
+								<svg class="why-answer__item-svg">
 									<use xlink:href="icons/svg_sprite.svg#man"></use>
 								</svg>
 							</div>
@@ -161,7 +166,7 @@
 						</li>
 						<li class="why-answer__item">
 							<div class="why-answer__item-pict why-answer__item-pict--middle">
-								<svg>
+								<svg class="why-answer__item-svg">
 									<use xlink:href="icons/svg_sprite.svg#smile"></use>
 								</svg>
 							</div>
@@ -174,7 +179,7 @@
 						</li>
 						<li class="why-answer__item">
 							<div class="why-answer__item-pict">
-								<svg>
+								<svg class="why-answer__item-svg">
 									<use xlink:href="icons/svg_sprite.svg#hand"></use>
 								</svg>
 							</div>
@@ -192,31 +197,147 @@
 			<img src="/img/why_leaf.png" alt="" class="why-pattern__leaf">
 			<img src="/img/why_raspberry.png" alt="" class="why-pattern__berry">			
 		</section>
+		<section class="command section">
+			<div class="conteiner">  
+				<h2 class="section__header command__header" id="command">
+					команда
+				</h2>   
+				<div class="command-accordeon">
+					<ul class="command__list">
+						<li class="command__item">
+							<img src="/img/com_boris.png" alt="" class="command__photo">					
+							<article class="command__text">
+								<div class="command__name">Борис Федорович</div>
+								<div class="command__hidden">
+									<div class=" command__prof ">Главный технолог</div>
+									<div class="command__descr ">Отвечает за вкусовые качества и калорийность</div>
+							</div>
+							</article>
+						</li>
+						<li class="command__item">
+							<img src="/img/com_alla.png" alt="" class="command__photo">					
+							<article class="command__text">
+								<div class="command__name">Алла Иванова</div>
+								<div class="command__hidden">
+									<div class="command__prof">Специалист по упаковке </div>
+									<div class="command__descr">Автор запоминающегося стиля  наших батончиков. </div>
+								</div>
+							</article>
+						</li>
+						<li class="command__item">					
+							<img src="/img/com_kirill.png" alt="" class="command__photo">
+							<article class="command__text--active">
+								<div class="command__name ">Кирилл Матросов</div>
+								<div class="command__hidden command__hidden">
+									<div class="command__prof">Оператор</div>
+									<div class="command__descr">С радостью поможет подобрать батончики и оформить заказ. </div>
+								</div>
+							</article>
+						</li>
+						<li class="command__item">
+							<img src="/img/com_mila.png" alt="" class="command__photo">
+							<article class="command__text">
+								<div class="command__name">Мила Рыжкова</div>
+								<div class="command__hidden">
+									<div class="command__prof">PR, маркетинг </div>
+									<div class="command__descr">По всем вопросам сотрудничества  и рекламы писать только Миле. </div>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<img src="/img/com_berry.png" alt="" class="command__pattern-berry">
+		</section> 
+		<section class="menu section">
+			<div class="conteiner">
+			<h2 class="section__header menu__header">
+				меню
+			</h2>
+			<div class="menu__accordeon">
+				<ul class="menu__list">
+						<div class="menu__item-bg menu__item-bg--milk">
+								<div class="menu__item-title">
+									Батончики с молоком
+								</div>
+							</div>
+					<li class="menu__item">
+						<div class=" menu__hidden  menu__hidden--active">				
+							<p class="menu__item-descr">
+								Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. 
+								Так и вкуснее, и полезнее. Ну чего еще хотеть от жизни?
+								Батончик - он твой лучший друг и радует всех вокруг. Как классно, что можно 
+								питаться полезно й вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто ее будет спрашивать - никто. 
+								Надо бы, кстати, бабулю поздравить с днемм Победы.
+							</p>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__item-bg menu__item-bg--fruit">
+							<div class="menu__item-title ">
+								С мёдом и фруктами
+							</div>
+						</div>
+						<div class=" menu__hidden">						
+							<p class="menu__item-descr">
+										Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. 
+										Так и вкуснее, и полезнее. Ну чего еще хотеть от жизни?
+										Батончик - он твой лучший друг и радует всех вокруг. Как классно, что можно 
+										питаться полезно й вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто ее будет спрашивать - никто. 
+										Надо бы, кстати, бабулю поздравить с днемм Победы.
+							</p>
+						</div>			
+					</li>
+					<li class="menu__item">
+						<div class="menu__item-bg menu__item-bg--berry">
+							<div class="menu__item-title">
+								Дикие ягоды
+							</div>
+						</div>
+						<div class=" menu__hidden ">
+							<p class="menu__item-descr">
+												Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. 
+												Так и вкуснее, и полезнее. Ну чего еще хотеть от жизни?
+												Батончик - он твой лучший друг и радует всех вокруг. Как классно, что можно 
+												питаться полезно й вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто ее будет спрашивать - никто. 
+												Надо бы, кстати, бабулю поздравить с днемм Победы.
+							</p>		
+						</div>						
+					</li>
+				</ul>
+			</div>
+			</div>
+
+		</section>
 		<section class="review section">
   		<div class="conteiner">  
-  		  <h2 class="review__header">
+  		  <h2 class="section__header" id="review">
 		      отзывы
   		  </h2>   
   		  <div class="review-item">
       	<div class="review-item__pict">
-      	  <img src="/img/rev_alena.png" alt="" class="review-item__photo">
+      	  <img src="/img/rev_maria.png" alt="" class="review-item__photo">
     	  </div>
     	  <div class="review-item__content">
-        <div class="review-item__content-title">Лучший перекус</div>
-        <div class="review-item__content-text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером 
-            и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно 
-            и удобно. </div>
-        <div class="review-item__content-autor">Алёна Хмельницкая</div>
+        <div class="review-item__content-title">Лучшие батончики 
+						премиум уровня</div>
+        <div class="review-item__content-text">Батончики понравились. 
+					На мой взгляд слегка завышена цена по сравнению с конкурентами, 
+					однако, как говорится – оно того стоит. Нравится носить с собой, 
+					нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод,
+					 хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, 
+					 чем минус.</div>
+        <div class="review-item__content-autor">Мария Орлова</div>
       	</div>
       	<img src="/img/rev_item_berry.png" alt="" class="review-item__pattern">
   		  </div>
   		  <div class="review-autors">
       <ul class="review-autors__list">
-        <li class="review-autors__list-item review-autors__list-item--active ">
-          <img src="/img/rev_alena.png" alt="" class="review-autors__list-photo review-autors__list-photo--active">
+        <li class="review-autors__list-item  ">
+          <img src="/img/rev_alena.png" alt="" class="review-autors__list-photo">
         </li>
-        <li class="review-autors__list-item">
-          <img src="/img/rev_maria.png" alt="" class="review-autors__list-photo">
+        <li class="review-autors__list-item review-autors__list-item--active">
+          <img src="/img/rev_maria.png" alt="" class="review-autors__list-photo  review-autors__list-photo--active">
         </li>
         <li class="review-autors__list-item">
           <img src="/img/rev_vadim.png" alt="" class="review-autors__list-photo">
@@ -227,7 +348,156 @@
 			<img src="/img/rev_leaf.png" alt="" class="review__pattern-leaf">
       <img src="/img/rev_berry.png" alt="" class="review__pattern-berry">
       <img src="/img/rev_strawberry.png" alt="" class="review__pattern-strawberry">
-	  </section>  
+		</section> 
+		<section class="order section">
+			<div class="conteiner">
+				<div class="section__header order__header">
+					закажите доставку
+				</div>
+				<div class="order__form">
+					<form class="form__tag">
+						<div class="form__col">
+							<div class="form__row form__row-double">
+								<label class="form__block">
+									<span class="form__block-title" >Имя</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+								<label class="form__block">
+									<span class="form__block-title">Телефон</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__block">
+									<span class="form__block-title" >Улица</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+							</div>
+							<div class="form__row form__row-quatro">
+								<label class="form__block">
+									<span class="form__block-title" >Дом</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+								<label class="form__block">
+									<span class="form__block-title">Корпус</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+								<label class="form__block">
+									<span class="form__block-title" >Квартира</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+								<label class="form__block">
+									<span class="form__block-title">Этаж</span>
+									<input type="text"  placeholder="" class="form__input form-field">
+								</label>
+							</div>
+						</div>
+						<div class="form__col">
+							<span class="form__row"> 
+								<label class="form__block">
+									<span class="form__block-title">Комментарий</span>
+									<textarea name="textarea" placeholder="" class="form__textarea form-field"></textarea>	
+								</label>
+							</span>
+							<div class="form__row">
+									<div class="form__radio">
+										<div class="form__radio-buttons">
+											<label class="form__block-radio">
+												<input type="radio" name="displ"  id="form__radio-buttonyes" class="form__radio-button" checked>
+												<span class="form__radio-visible"></span>
+												<span class="form__radio-option">Потребуется сдача</span>
+											</label>
+											<label class="form__block-radio">
+												<input type="radio" name="displ"  id="form__radio-buttonno" class="form__radio-button">
+												<span class="form__radio-visible "></span>
+												<span class="form__radio-option">Оплата по карте</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__check">
+										<label class="form__block-check">
+											<input type="checkbox" name="displ"  class="form__check-button" checked>
+											<span class="form__check-visible "></span>
+											<span class="form__check-title">Не перезванивать</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__button">
+										<button type="submit" class="button-submit">
+											<span class="button__text">заказать</span>									
+										</button>	
+										<button type="reset" class="form__button-reset">
+											<span class="button__text">Очистить</span>	
+										</button>									
+									</div>
+								</div>
+								</div>
+					</form>	
+			
+				</div>
+			</div>
+			<img src="/img/order_berry.png" alt="" class="order__pattern-berry">
+			<img src="/img/order_leaf.png" alt="" class="order__pattern-leaf">
+		</section> 
+		<section class="map section">		
+			<img src="/img/map_bg.png" alt="" class="map__img">	
+			<footer class="footer">
+				<div class="conteiner footer__conteiner">
+					<div class="footer__contacts">
+						<div class="footer__addres">
+								Москва, ул.Новый Арбат, д.31/12
+						</div>
+						<div class="footer__phone">
+								<svg class="footer__phone-svg">
+								<use xlink:href="icons/svg_sprite.svg#phone"></use>
+							</svg>
+						<a href="tel:88009039090" class="footer__phone-number">8 800 903 90 90</a>
+					</div>
+					</div>
+					<div class="footer__social">
+						<ul class="footer__social-list">
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link">
+									<svg class="socials__link-icon">
+                    <use xlink:href="icons/svg_sprite.svg#vk"></use>
+                  </svg>
+								</a>
+							</li>
+							<li class="footer__social-item">
+									<a href="#" class="footer__social-link">
+										<svg class="socials__link-icon">
+											<use  xlink:href="icons/svg_sprite.svg#fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="footer__social-item">
+										<a href="#" class="footer__social-link">
+											<svg class="socials__link-icon">
+												<use xlink:href="icons/svg_sprite.svg#inst"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="footer__social-item">
+										
+											<a href="#" class="footer__social-link">
+												<svg class="socials__link-icon">
+													<use xlink:href="icons/svg_sprite.svg#tw"></use>
+												</svg>
+											</a>
+										</li>
+						</ul>
+					</div>
+
+				</div>
+
+
+			</footer>
+		</section>	
+
+ 		
 	</div>
 </body>
 </html>

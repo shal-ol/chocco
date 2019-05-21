@@ -5,104 +5,266 @@
     background-color: #61c4d9;
     font-family: Alegreya Sans;
     color: #ffffff;
+    @include tablets {
+      margin-bottom: 5rem;
+  }
+  //@include phones {
+ //   flex-direction: column-reverse;
+ //   justify-content: center;
+  //  align-items: center;
+ // }
+
   }
 
   .welcome__content{
-
     display: flex;
+    @include tablets {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+@include phones {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
   }
 
   .welcome__txt{
     display: flex;
     flex-direction: column;
     width: 52%;
+    @include tablets {
+      align-items: center;
+    }
+    @include phones {
+      align-items: center;
+      width: 70%;
+   }
   }
 
   .welcome__pict{
     width: 50%;
-    margin-top: -31px;
+    margin-top: rem(-31px);
+ 
   }
+
 
   
   .welcome__header{
-    font-size: 60px;
+    font-size: rem(60px);
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: rem(60px);
     font-weight: bold;
-    margin-top: 69px;
-    margin-bottom: 6px;
+    margin-top: rem(69px);
+    margin-bottom: rem(6px);
+    position: relative;
+    z-index: 3;
+    @include tablets {
+      text-align: center;
+    }
+    @include phones {
+      text-align: center;
+      line-height: rem(40px);
+      font-size: rem(48px);
+      margin-bottom: 1.375rem;
+      
+   }
   }
   .welcome__text{
-    font-size: 21px;
-    line-height: 26px;
-    width: 76%;
-    margin-bottom: 30px;
+    font-size: rem(21px);
+    line-height: rem(26px);
+    width: 90%;
+    margin-bottom: 2.875rem;
+    position: relative;
+    z-index: 3;
+    @include tablets {
+      text-align: center;
+    }
+    @include phones {
+      text-align: center;
+      margin-bottom: 1.875rem;
+   }
   }
 
 
 .welcome__button{
   color: #0f5a47;
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: 800;
   text-transform: uppercase;
   background-color: #fff;
-  width: 156px;
-  height: 56px;
-  border-radius: 27px;
-  box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
-  padding: 16px 34px;
-  margin-bottom: 67px;
+  width: rem(156px);
+  height: rem(56px);
+  border-radius: rem(27px);
+  box-shadow: 0 0 rem(31px) rgba(0, 0, 0, 0.2);
+  padding: rem(16px) rem(34px);
+  margin-bottom: rem(67px);
   position: relative;
   z-index: 3;
+  @include phones{
+  width: 11rem;
+    height: 4rem;
+    border-radius: 2.6875rem;
+    padding: 1.3rem 2.6rem;
+    margin-bottom: 3.7rem;
+}
 }
 
 .welcome__descr{
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: rem(38px);
+  position: relative;
+  z-index: 3;
 }
 
 .welcome__descr-item{
   display: flex;
   width: 29%;
-  margin-right: 30px;
+  margin-right: rem(30px);
+  &:last-child{
+    margin-right: rem(0px);
+  }
+  @include tablets {
+    width: 35%;
+    margin-right: 4.875rem;
+  }
+ @include phones {
+  width: 35%;
+  margin-right: 1.875rem;
+  }
 }
 
 .welcome__descr-text{
-  font-size: 16px;
-  width: 67%;
+  font-size: rem(16px);
+  width: 80%;
   line-height: 1.2;
 }
 
   .welcome__svg{
-    height: 43px;
-    width: 83px;
-    fill:  #61c4d9;
+    height: rem(43px);
+    width: rem(83px);
+    fill:  transparent;
     stroke:  #b0f7ff;
-    margin-right: 2px;
+    margin-right: rem(2px);
   }
 
   .welcome__pict-candy{
   position: relative;
+
   z-index: 2;
+  @include tablets {
+    height: 28rem;
   }
+  @include phones {
+  height: 28rem;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -3rem;
+  }
+  }
+
+  .welcome__pict{
+    @include phones {
+    height: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    }
 
 .welcome__pict-leaf, .welcome__pict-leafs, .welcome__pict-berry {
   position: absolute;
 }
 
 .welcome__pict-leaf{
-  bottom: -50px;
-  right: 11px;
+  bottom: rem(-50px);
+  right: rem(11px);
   z-index: 1;
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    display: none;
+ }
 }
 
 .welcome__pict-leafs{
-  bottom: 2px;
-  right: -2px;  
+  bottom: rem(2px);
+  right: rem(-2px);  
+  @include tablets {
+  bottom: 26.125rem;
+  right: 0.6rem;
+  }
+  @include phones {
+    bottom: 27.5rem;
+    right: 0rem;
+    width: 29rem;
+
+    }
 }
 
 .welcome__pict-berry{
-  bottom: -40px;
-  right: 87px;
+  bottom: rem(-40px);
+  right: rem(87px);
   z-index: 1;
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    display: none;
+ }
 }
+
+
+ .welcome__pict-berry768{
+  display: none;
+  z-index: 1;
+  @include tablets {
+    position: absolute;
+    display: block;
+    bottom: 35rem;
+    right: 12.4375rem;
+  }
+  @include phones {
+  position: absolute;
+  display: block;
+  bottom: 31.5rem;
+  right: 2rem;
+ }
+ }
+
+ .welcome__pict-leaf768{
+  display: none;
+  z-index: 1;
+  @include tablets {
+    position: absolute;
+    display: block;
+    bottom: 34.5rem;
+    right: 11.8rem;
+  }
+  @include phones {
+  position: absolute;
+  display: block;
+  bottom: 31rem;
+  right: 1.2rem;
+ }
+ }
+
+ .welcome__pict-leafs768{
+  display: none;
+  z-index: 1;
+  @include tablets {
+    position: absolute;
+    display: block;
+    bottom: 39.5rem;
+    left: 10.4375rem;
+  }
+  @include phones {
+  position: absolute;
+  display: block;
+  bottom: 36.5rem;
+  left: 2rem;
+ }
+ }

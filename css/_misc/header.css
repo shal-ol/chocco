@@ -1,12 +1,10 @@
-
-
-.header{
+.header {
   justify-content: space-between;
   display: flex;
   align-items: center;
   background-color: #61c4d9;
   font-family: Alegreya Sans;
   color: #ffffff;
-  height: rem(85px);
-}
+  height: rem(85px); }
 
+/*# sourceMappingURL=header.css.map */

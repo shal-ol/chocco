@@ -5,7 +5,12 @@
   font-weight: normal;  
   font-style: normal;  
   }
+
+  //breakpoints
+  $tablets: 768px;
+  $phones: 480px;
   
+@import "_misc/mixins.scss";
 @import "_misc/normalize.scss";
 @import "_misc/header.scss";
 @import "_misc/layout.scss";
@@ -16,5 +21,11 @@
 @import "_misc/welcome.scss";
 @import "_misc/why.scss";
 @import "_misc/review.scss";
-
+@import "_misc/section__header.scss";
+@import "_misc/command.scss";
+@import "_misc/menu.scss";
+@import "_misc/order.scss";
+@import "_misc/form.scss";
+@import "_misc/map.scss";
+@import "_misc/footer.scss";
 

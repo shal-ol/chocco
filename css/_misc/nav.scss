@@ -1,15 +1,22 @@
 .nav__menu {
+  
+  @include tablets {
+    display: none;
+}
+@include phones {
+    display: none;
+}
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     .nav__item{
-padding: 0px 13px;
+padding: rem(0px) rem(13px);
 
     }
     .nav__item-link{
       color: #ffffff;
-      font-size: 18px;
+      font-size: rem(18px);
       z-index: 2;
     }
   }
