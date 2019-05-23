@@ -12,8 +12,8 @@ Error: Undefined mixin 'tablets'.
 25:   width: 100%;
 26: 
 27: }
-28: // @include phones {
-29: // width: 50%;
+28: 
+29: }
 
 Backtrace:
 C:\course\CHOCCO\page\css\_misc\menu.scss:24:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss, in `tablets'\A         from line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss\A \A 19:     align-items: flex-start;\A 20:     justify-content: flex-end;\A 21: right:  0;\A 22: width: 76%;\A 23: height: 100%; \A 24: @include tablets {\A 25:   width: 100%;\A 26: \A 27: }\A 28: // @include phones {\A 29: // width: 50%;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss, in `tablets'\A         from line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss\A \A 19:     align-items: flex-start;\A 20:     justify-content: flex-end;\A 21: right:  0;\A 22: width: 76%;\A 23: height: 100%; \A 24: @include tablets {\A 25:   width: 100%;\A 26: \A 27: }\A 28: \A 29: }"; }
