@@ -134,6 +134,8 @@
     object-fit: cover;
     object-position: 50%;
     border: rem(8px) solid transparent;
+    z-index: 3;
+    position: relative;
   }
   
    .review-autors__list-photo--active{

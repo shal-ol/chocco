@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss, in `tablets'
-        from line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss
+        on line 25 of C:\course\CHOCCO\page\css\_misc\menu.scss, in `tablets'
+        from line 25 of C:\course\CHOCCO\page\css\_misc\menu.scss
 
-19:     align-items: flex-start;
-20:     justify-content: flex-end;
-21: right:  0;
-22: width: 76%;
-23: height: 100%; 
-24: @include tablets {
-25:   width: 100%;
-26: 
-27: }
-28: 
-29: }
+20:     align-items: flex-start;
+21:     justify-content: flex-end;
+22: right:  0;
+23: width: 76%;
+24: height: 100%; 
+25: @include tablets {
+26:   width: 100%;
+27: 
+28: }
+29: 
+30: }
 
 Backtrace:
-C:\course\CHOCCO\page\css\_misc\menu.scss:24:in `tablets'
-C:\course\CHOCCO\page\css\_misc\menu.scss:24
+C:\course\CHOCCO\page\css\_misc\menu.scss:25:in `tablets'
+C:\course\CHOCCO\page\css\_misc\menu.scss:25
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss, in `tablets'\A         from line 24 of C:\course\CHOCCO\page\css\_misc\menu.scss\A \A 19:     align-items: flex-start;\A 20:     justify-content: flex-end;\A 21: right:  0;\A 22: width: 76%;\A 23: height: 100%; \A 24: @include tablets {\A 25:   width: 100%;\A 26: \A 27: }\A 28: \A 29: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 25 of C:\course\CHOCCO\page\css\_misc\menu.scss, in `tablets'\A         from line 25 of C:\course\CHOCCO\page\css\_misc\menu.scss\A \A 20:     align-items: flex-start;\A 21:     justify-content: flex-end;\A 22: right:  0;\A 23: width: 76%;\A 24: height: 100%; \A 25: @include tablets {\A 26:   width: 100%;\A 27: \A 28: }\A 29: \A 30: }"; }

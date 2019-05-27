@@ -9,6 +9,52 @@
 </head>
 <body>
   <div class="wrapper">
+		<div class="nav__hidden">
+			<nav class="nav" id="nav">
+					<ul class="nav__menu">
+						<li class="nav__item">
+							<a href="#" class="nav__item-link">
+								<div class="nav__item-text">О нас</div>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__item-link">
+								<div class="nav__item-text">Батончики</div>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#command" class="nav__item-link">
+								<div class="nav__item-text">Команда</div>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__item-link">
+								<div class="nav__item-text">Меню</div>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#review" class="nav__item-link">
+								<div class="nav__item-text">Отзывы</div>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__item-link">
+								<div class="nav__item-text">Как мы работаем</div>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__item-link">
+								<div class="nav__item-text">Контакты</div>
+							</a>
+						</li>
+					</ul>
+					<div class="nav__close">
+					</div>
+			</nav>
+			<div class="nav__open">				
+			</div>
+
+		</div>
 		<aside class="sidebar">
 					<nav class="nav__sidebar">
 						<ul class="nav__menu">
@@ -45,7 +91,8 @@
 		</aside>
 		<section class="welcome section">
 			<div class="conteiner">
-				<header class="header">					
+				<header class="header">
+				
 					<div class="logo">cho cco</div>
 					<nav class="nav">
 						<ul class="nav__menu">
@@ -94,7 +141,7 @@
 					</div>
 					
 				</header>
-				
+	
 				<div class="welcome__content">
 					<div class="welcome__txt">
 					<h1 class="welcome__header">натуральные  шоколадные  батончики</h1>
@@ -197,6 +244,49 @@
 			<img src="/img/why_leaf.png" alt="" class="why-pattern__leaf">
 			<img src="/img/why_raspberry.png" alt="" class="why-pattern__berry">			
 		</section>
+
+		<section class="slider__section section">
+				<div class="conteiner">    
+					<div class="slider__conteiner">
+						<a href="#" class="slider__arrow-left"></a>
+						<ul class="slider">
+							<li class="slider-item">
+								<div class="slider__pict">
+									<img src="./img/slid_candy.png" alt="" class="slider__img">
+								</div>	
+								<article class="slider__article">
+										<h3 class="slider__header" id="command">батончик "морские водоросли</h3> 
+										<div class="slider__consist">
+											<div class="slider__consist-header">Состав:</div>
+											<div class="slider__consist-text">Гранола из морских водорослей с овсом,
+												миндалем и тыквенными семечками. В состав также входят:
+												сухое молоко, заменитель сахара и какао бобы.</div>
+										</div>
+										<ul class="slider__charact">
+											<li class="slider__charact-item">
+												<div class="slider__charact-header">Каллорийность</div>
+												<div class="slider__charact-value">120 ккал</div>
+											</li>
+											<li class="slider__charact-item">
+												<div class="slider__charact-header">Вес</div>
+												<div class="slider__charact-value">98 грамм</div>
+											</li>
+										</ul>
+										<div class="slider__footer">
+											<div class="slider__price">140 p</div>
+											<a href="#" class="slider__button">заказать</a>
+										</div>
+								</article>
+						</ul>
+						<a href="#" class="slider__arrow-right"></a>
+					</div>
+				</div>
+				<img src="./img/slid_leaf.png" alt="" class="slider__pattern-leaf">
+				<img src="./img/slid_leaf1.png" alt="" class="slider__pattern-leaf1">
+				<img src="./img/slid_berry.png" alt="" class="slider__pattern-berry">
+			</section> 
+
+
 		<section class="command section">
 			<div class="conteiner">  
 				<h2 class="section__header command__header" id="command">
@@ -436,8 +526,7 @@
 									</div>
 								</div>
 								</div>
-					</form>	
-			
+					</form>				
 				</div>
 			</div>
 			<img src="/img/order_berry.png" alt="" class="order__pattern-berry">
@@ -491,14 +580,11 @@
 										</li>
 						</ul>
 					</div>
-
 				</div>
-
-
 			</footer>
 		</section>	
-
- 		
 	</div>
+
+<script src="./js/nav__hidden.js" defer></script>
 </body>
 </html>

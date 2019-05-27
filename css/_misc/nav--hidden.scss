@@ -1,0 +1,95 @@
+.nav__hidden { 
+
+    .nav{
+        position: fixed;
+        background-color: rgb(47, 50, 52);
+        opacity: 0.99;
+        height: 100vh;
+        width: 100%;
+        z-index: 4;
+        font-family: Alegreya Sans;
+        display: none;
+    @include tablets {
+
+        justify-content: center;
+        align-items: flex-start;
+    }
+    @include phones {
+
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+    .nav__item-link{
+        font-size: rem(36px);
+    }
+   
+.nav__menu{
+
+    line-height: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.375rem;
+
+}
+.nav__close {
+    position: absolute;
+    right: rem(32px);
+    top: rem(32px);
+    width: rem(32px);
+    height: rem(32px);
+    }
+
+    .nav__close:before, .nav__close:after {
+    position: absolute;
+    left: rem(15px);
+    content: ' ';
+    height: rem(25px);
+    width: rem(5px);
+    background-color: #ffffff;
+    border-radius: 15%;
+    }
+    .nav__close:before {
+    transform: rotate(45deg);
+    }
+    .nav__close:after {
+    transform: rotate(-45deg);
+    }
+
+.nav__open{
+    position: fixed;
+    right: rem(30px);
+    top: 2.5rem;
+    height: rem(5px);
+    width: rem(25px);
+    background-color: #ffffff;
+    border-radius: 15%;
+    z-index: 4;
+    display: none;
+    @include tablets {
+        display: block;
+    }
+    @include phones {
+        display: block;
+    }
+}
+
+.nav__open:before, .nav__open:after{
+    content: ' ';
+    position: absolute;
+    height: rem(5px);
+    width: rem(25px);
+    background-color: #ffffff;
+    border-radius: 15%;
+    z-index: 4;
+
+}
+.nav__open:before{
+top: 10px;
+}
+.nav__open:after{
+bottom: 10px;
+}
+}
+
