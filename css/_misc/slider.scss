@@ -4,30 +4,48 @@
       background-color:  #f8faf9;
       font-family: Alegreya Sans;
       color: #333333;
+      height: 100vh;
 }
 
 .slider__conteiner{
     display: flex;
 }
 
-.slider__arrow-left{
+.slider__arrow-right, .slider__arrow-left{
     position: absolute;
     top: 52%;
-    left: 3.125rem;
-    background-image: url('../../img/arrow-scroll_l.png');
     background-repeat: no-repeat;
     height: 2.1875rem;
     width: 1.5625rem;
+    @include tablets {
+        top: 27%;
+        }
+        @include phones {
+        top: 26%;
+        }
 }
 
+.slider__arrow-left{
+    left: 3.125rem;
+    background-image: url('../../img/arrow-scroll_l.png');
+    @include tablets {
+        right: 2.875rem;
+        }
+        @include phones {
+            left: 0.125rem;
+        }
+ }
+
 .slider__arrow-right{
-    position: absolute;
-    top: 52%;
     right: 2.875rem;
     background-image: url('../../img/arrow-scroll_r.png');
-    background-repeat: no-repeat;
-    height: 2.1875rem;
-    width: 1.5625rem;
+    @include tablets {
+        right: 2.875rem;
+        }
+        @include phones {
+            right: 0.875rem;
+        }
+
 }
 
 
@@ -35,11 +53,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include tablets {
+    flex-direction: column;
     }
+    @include phones {
+    flex-direction: column;
+    }
+}
 
     .slider__img{
         display: block;
         z-index: 2;
+        background-size: contain;
+        width: 100%;
+
     }
 .slider__pict{  
 position: relative;
@@ -48,29 +75,18 @@ justify-content: center;
 align-items: center;
 margin-right: 3rem;
 width: 61%;
-    height: 12.5rem;
-    &:before{
-        position: absolute;
-        content: ' ';
-        background-image: url('../../img/slid_el1.png');
-        background-repeat: no-repeat;
-        min-height: 19.0625rem;
-        min-width: 24.0625rem;
-        top: -1rem;
-        right: 2.3125rem;
-        z-index: 1;
+height: 100%;
+background-size: contain;
+@include tablets {
+    width: 58%;
+    margin-right: 0rem;
+    margin-top: -4.625rem;
     }
-    &:after{
-        position: absolute;
-        content: ' ';
-        background-image: url('../../img/slid_el2.png');
-        background-repeat: no-repeat;
-        min-height: 19.0625rem;
-        min-width: 24.5625rem;
-        top: 3.375rem;
-        right: 2.25rem;
-        z-index: 0;
-    }
+  @include phones {
+  width: 90%;
+  margin-right: 0rem;
+   }
+   
 
 }
 
@@ -83,6 +99,14 @@ width: 61%;
     width: 50%;
     margin-top: 5.5625rem;
     z-index: 2;
+    @include tablets {
+    text-align: center;
+    margin-top: -2rem;
+        }
+        @include phones {
+   text-align: center;
+   width: 100%;
+        }
 }
 
 
@@ -92,6 +116,13 @@ width: 61%;
     color: #000000;
     text-transform: uppercase;
     margin-bottom: 1.3125rem;
+    @include tablets {
+        font-size: 1.875rem;
+        margin-bottom: 0.3125rem;
+        }
+    //    @include phones {
+    //    top: -0.3125rem;
+   //     }
 }
 
 
@@ -99,6 +130,12 @@ width: 61%;
     &-header{
         font-size: 1.5rem;
         margin-bottom: 1.125rem;
+        @include tablets {
+            margin-bottom: 1rem;
+            }
+        //    @include phones {
+          //      margin: 0 auto;
+         //   }
     }
 
     &-text{
@@ -107,6 +144,16 @@ width: 61%;
         width: 86%;
     line-height: 1.375rem;
     margin-bottom: 2.5rem;
+    @include tablets {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 2.8125rem;
+        }
+        @include phones {
+            margin: 0 auto;
+            margin-bottom: 3.9rem;
+            width: 100%;
+        }
     }
 }
 
@@ -118,10 +165,37 @@ width: 61%;
     width: 100%;
     font-size: 1.125rem;
     margin-bottom: 1.9375rem;
+    @include tablets {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2.6875rem;
+        }
+        @include phones {
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.1875rem;
+        }
 }
 
 .slider__charact-item{
     margin-right: 2.8125rem;
+    &:last-child{
+        margin-right: 0;
+    }
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 4.8125rem;
+        }
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
 
 }
 
@@ -137,10 +211,27 @@ width: 61%;
     width: 100%;
     font-size: 3.75rem;
     color: #0d0d0d;
+    margin-bottom: 40px;
+    @include tablets {
+        align-items: center;
+        justify-content: center;
+
+        }
+        @include phones {
+            align-items: center;
+            justify-content: center;
+        }
 }
 
 .slider__price{
     margin-right: 1.8125rem;
+    @include tablets {
+        margin-right: 2.8125rem;
+
+        }
+        @include phones {
+            margin-right: 2.8125rem;
+        }
 }
 
 .slider__button{
@@ -156,12 +247,38 @@ width: 61%;
     &:hover{
         background-color: #0b4d3c;  
     }
+    @include tablets {
+        margin-right: 0;
+
+        }
+        @include phones {
+            margin-right: 0;
+        }
 }
 
 .slider__pattern-leaf{
     position: absolute;
-    left: 4.875rem;
-    bottom: 5.875rem;
+    left: -0.5rem;
+    bottom: 3.875rem;
+    @include tablets {
+        display: none;
+        }
+    @include phones {
+        display: none;
+    }
+}
+
+.slider__pattern-leaf768{
+    display: none;
+    @include tablets {
+        display: block;
+        position: absolute;
+        left: 0.875rem;
+        bottom: 4rem;
+        }
+    //    @include phones {
+    //    top: -0.3125rem;
+   //     }
 }
 
 .slider__pattern-leaf1{
@@ -169,6 +286,17 @@ width: 61%;
     right: 0rem;
     bottom: -22.8125rem;
     width: 12.25rem;
+    @include tablets {
+        right: 0rem;
+        bottom: -12.812rem;
+        width: 10.25rem;
+              }
+          @include phones {
+            right: 0rem;
+            bottom: -7.812rem;
+            width: 10.25rem;
+          }
+
 }
 
 .slider__pattern-berry{
@@ -176,4 +304,17 @@ width: 61%;
     right: 0.9375rem;
     bottom: -4.625rem;
     width: 8.4375rem;
+    @include tablets {
+  max-height: 5.3125rem;
+  max-width: 6.375rem;
+  right: -1.0625rem;
+  bottom: 0.5rem;
+        }
+    @include phones {
+        max-height: 5.3125rem;
+        max-width: 6.375rem;
+        right: -1.0625rem;
+        bottom: 5.5rem;
+    }
 }
+
