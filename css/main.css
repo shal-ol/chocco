@@ -1715,7 +1715,7 @@ p {
   background-image: url("../../img/arrow-scroll_l.png"); }
   @media screen and (max-width: 768px) {
     .slider__arrow-left {
-      right: 2.875rem; } }
+      left: 10.125rem; } }
   @media screen and (max-width: 480px) {
     .slider__arrow-left {
       left: 0.125rem; } }
@@ -1725,12 +1725,13 @@ p {
   background-image: url("../../img/arrow-scroll_r.png"); }
   @media screen and (max-width: 768px) {
     .slider__arrow-right {
-      right: 2.875rem; } }
+      right: 9.875rem; } }
   @media screen and (max-width: 480px) {
     .slider__arrow-right {
       right: 0.875rem; } }
 
 .slider-item {
+  margin-top: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center; }

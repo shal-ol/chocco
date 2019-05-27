@@ -29,7 +29,7 @@
     left: 3.125rem;
     background-image: url('../../img/arrow-scroll_l.png');
     @include tablets {
-        right: 2.875rem;
+        left: 10.125rem;
         }
         @include phones {
             left: 0.125rem;
@@ -40,7 +40,7 @@
     right: 2.875rem;
     background-image: url('../../img/arrow-scroll_r.png');
     @include tablets {
-        right: 2.875rem;
+        right: 9.875rem;
         }
         @include phones {
             right: 0.875rem;
@@ -50,6 +50,7 @@
 
 
 .slider-item   {
+    margin-top: 3.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
