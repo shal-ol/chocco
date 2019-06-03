@@ -7,7 +7,7 @@ Error: Undefined mixin 'tablets'.
 6:     justify-content: center;
 7:     background-color: #ffffff;
 8:     font-family: Alegreya Sans; 
-9:     z-index: -1;
+9:     z-index: 0;
 10:     @include tablets {
 11:     margin-bottom: 5rem;
 12:     margin-left: 2rem;
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\course\CHOCCO\page\css\_misc\command.scss, in `tablets'\A         from line 10 of C:\course\CHOCCO\page\css\_misc\command.scss\A \A 5:     align-items: center;\A 6:     justify-content: center;\A 7:     background-color: #ffffff;\A 8:     font-family: Alegreya Sans; \A 9:     z-index: -1;\A 10:     @include tablets {\A 11:     margin-bottom: 5rem;\A 12:     margin-left: 2rem;\A 13:     }\A 14:     @include phones {\A 15:         margin-left: 0rem;;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\course\CHOCCO\page\css\_misc\command.scss, in `tablets'\A         from line 10 of C:\course\CHOCCO\page\css\_misc\command.scss\A \A 5:     align-items: center;\A 6:     justify-content: center;\A 7:     background-color: #ffffff;\A 8:     font-family: Alegreya Sans; \A 9:     z-index: 0;\A 10:     @include tablets {\A 11:     margin-bottom: 5rem;\A 12:     margin-left: 2rem;\A 13:     }\A 14:     @include phones {\A 15:         margin-left: 0rem;;"; }

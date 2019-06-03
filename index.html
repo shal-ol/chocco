@@ -248,7 +248,7 @@
 		<section class="slider__section section">
 				<div class="conteiner">    
 					<div class="slider__conteiner">
-						<a href="#" class="slider__arrow-left"></a>
+						<div class="slider__arrow-left"></div>
 						<ul class="slider">
 							<li class="slider-item">
 								<div class="slider__pict">
@@ -279,8 +279,39 @@
 											<a href="#" class="slider__button">заказать</a>
 										</div>
 								</article>
+							</li>
+							<li class="slider-item">
+								<div class="slider__pict">
+									<img src="./img/slid_leaf_768.png" alt="" class="slider__pattern-leaf768">
+									<img src="./img/slid_leaf.png" alt="" class="slider__pattern-leaf">
+									<img src="./img/slid_candy_2.png" alt="" class="slider__img">
+								</div>	
+								<article class="slider__article">
+									<h3 class="slider__header" id="command">Батончик “Гранола виноград”</h3> 
+									<div class="slider__consist">
+										<div class="slider__consist-header">Состав:</div>
+										<div class="slider__consist-text">Гранола из винограда, грецкого ореха и кунжутных
+											 семечек. В состав также входят: сухое молоко, 
+											заменитель сахара и какао бобы.</div>
+										</div>
+										<ul class="slider__charact">
+											<li class="slider__charact-item">
+												<div class="slider__charact-header">Каллорийность</div>
+												<div class="slider__charact-value">110 ккал</div>
+											</li>
+											<li class="slider__charact-item">
+												<div class="slider__charact-header">Вес</div>
+												<div class="slider__charact-value">95 грамм</div>
+											</li>
+										</ul>
+										<div class="slider__footer">
+											<div class="slider__price">140 &#8381</div>
+											<a href="#" class="slider__button">заказать</a>
+										</div>
+									</article>
+								</li>
 						</ul>
-						<a href="#" class="slider__arrow-right"></a>
+						<div class="slider__arrow-right"></div>
 					</div>
 				</div>
 
@@ -316,11 +347,11 @@
 								</div>
 							</article>
 						</li>
-						<li class="command__item">					
+						<li class="command__item command__item--active">					
 							<img src="/img/com_kirill.png" alt="" class="command__photo">
-							<article class="command__text--active">
+							<article class="command__text">
 								<div class="command__name ">Кирилл Матросов</div>
-								<div class="command__hidden command__hidden">
+								<div class="command__hidden">
 									<div class="command__prof">Оператор</div>
 									<div class="command__descr">С радостью поможет подобрать батончики и оформить заказ. </div>
 								</div>
@@ -348,14 +379,13 @@
 			</h2>
 			<div class="menu__accordeon">
 				<ul class="menu__list">
-					<li class="menu__item">
-						<div class="menu__item-bg menu__item-bg--milk">
+					<li class="menu__item menu__item--active">
+						<div class="menu__item-bg  menu__item-bg--milk">
 								<div class="menu__item-title">
 									Батончики с молоком
 								</div>
-							</div>
-				
-						<div class=" menu__hidden  menu__hidden--active">				
+							</div>				
+						<div class=" menu__hidden ">				
 							<p class="menu__item-descr">
 								Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. 
 								Так и вкуснее, и полезнее. Ну чего еще хотеть от жизни?
@@ -448,40 +478,40 @@
 					закажите доставку
 				</div>
 				<div class="order__form">
-					<form class="form__tag">
+					<form class="form__tag" id="formTag">
 						<div class="form__col">
 							<div class="form__row form__row-double">
 								<label class="form__block">
 									<span class="form__block-title" >Имя</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text" name="name" placeholder="" class="form__input form-field" required>
 								</label>
 								<label class="form__block">
 									<span class="form__block-title">Телефон</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text" name="phone" placeholder="" class="form__input form-field" required>
 								</label>
 							</div>
 							<div class="form__row">
 								<label class="form__block">
 									<span class="form__block-title" >Улица</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text" name="street" placeholder="" class="form__input form-field">
 								</label>
 							</div>
 							<div class="form__row form__row-quatro">
 								<label class="form__block">
 									<span class="form__block-title" >Дом</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text"  name="house" placeholder="" class="form__input form-field">
 								</label>
 								<label class="form__block">
 									<span class="form__block-title">Корпус</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text" name="building" placeholder="" class="form__input form-field">
 								</label>
 								<label class="form__block">
 									<span class="form__block-title" >Квартира</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text" name="appt" placeholder="" class="form__input form-field">
 								</label>
 								<label class="form__block">
 									<span class="form__block-title">Этаж</span>
-									<input type="text"  placeholder="" class="form__input form-field">
+									<input type="text" name="floor" placeholder="" class="form__input form-field">
 								</label>
 							</div>
 						</div>
@@ -489,19 +519,19 @@
 							<span class="form__row"> 
 								<label class="form__block">
 									<span class="form__block-title">Комментарий</span>
-									<textarea name="textarea" placeholder="" class="form__textarea form-field"></textarea>	
+									<textarea name="textarea" placeholder="" class="form__textarea form-field" required></textarea>	
 								</label>
 							</span>
 							<div class="form__row">
 									<div class="form__radio">
 										<div class="form__radio-buttons">
 											<label class="form__block-radio">
-												<input type="radio" name="displ"  id="form__radio-buttonyes" class="form__radio-button" checked>
+												<input type="radio" name="change" value="Потребуется сдача" id="form__radio-buttonyes" class="form__radio-button" checked>
 												<span class="form__radio-visible"></span>
 												<span class="form__radio-option">Потребуется сдача</span>
 											</label>
 											<label class="form__block-radio">
-												<input type="radio" name="displ"  id="form__radio-buttonno" class="form__radio-button">
+												<input type="radio" name="change" value="Оплата по карте" id="form__radio-buttonno" class="form__radio-button">
 												<span class="form__radio-visible "></span>
 												<span class="form__radio-option">Оплата по карте</span>
 											</label>
@@ -511,7 +541,7 @@
 								<div class="form__row">
 									<div class="form__check">
 										<label class="form__block-check">
-											<input type="checkbox" name="displ"  class="form__check-button" checked>
+											<input type="checkbox" name="call"  class="form__check-button" checked>
 											<span class="form__check-visible "></span>
 											<span class="form__check-title">Не перезванивать</span>
 										</label>
@@ -519,7 +549,7 @@
 								</div>
 								<div class="form__row">
 									<div class="form__button">
-										<button type="submit" class="button-submit">
+										<button type="submit" id="buttonSubmit" class="button-submit">
 											<span class="button__text">заказать</span>									
 										</button>	
 										<button type="reset" class="form__button-reset">
@@ -527,13 +557,24 @@
 										</button>									
 									</div>
 								</div>
+								<input name="email" type="hidden" value="shal-ol@mail.ru">
 								</div>
+
 					</form>				
 				</div>
+
 			</div>
 			<img src="/img/order_berry.png" alt="" class="order__pattern-berry">
 			<img src="/img/order_leaf.png" alt="" class="order__pattern-leaf">
 		</section> 
+		<div class="modal">
+			<div class="modal__bg">
+				<div class="modal__text"></div>
+				<div class="modal__button">
+					закрыть
+				</div>
+			</div>
+		</div>
 		<section class="map section">		
 			<img src="/img/map_bg.png" alt="" class="map__img">	
 			<footer class="footer">
@@ -586,7 +627,11 @@
 			</footer>
 		</section>	
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="./js/nav__hidden.js" defer></script>
+<script src="./js/menu.js" defer></script>
+<script src="./js/command.js" defer></script>
+<script src="./js/slider.js" defer></script>
+<script src="./js/form.js" defer></script>
 </body>
 </html>

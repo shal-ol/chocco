@@ -52,6 +52,7 @@ border-radius: 3px;
 box-shadow: 
 0 0 0 3px #dde3bd;
   }
+
 }
 
 .form__row{
@@ -94,7 +95,7 @@ width: 100%;
   height: rem(60px);
   margin-bottom: rem(21px);
   margin-right: rem(16px);
- 
+
 @include phones {
   height: 4.3rem;
 }
@@ -228,7 +229,7 @@ margin-bottom: rem(8px);
           border-radius: rem(27px); 
           padding: rem(18px) rem(34px);      
           margin-right: rem(21px);
-
+outline: none;
           @include phones {
                 padding: 1.5rem 3rem;
                 border-radius: 2.6875rem;
@@ -248,3 +249,5 @@ margin-bottom: rem(8px);
   margin-bottom: 5rem;
   }
 }
+
+

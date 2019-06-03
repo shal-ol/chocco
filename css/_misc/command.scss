@@ -6,7 +6,7 @@
     justify-content: center;
     background-color: #ffffff;
     font-family: Alegreya Sans; 
-    z-index: -1;
+    z-index: 0;
     @include tablets {
     margin-bottom: 5rem;
     margin-left: 2rem;
@@ -124,7 +124,7 @@ text-align: center;
     text-align: center;
 }
 
-.command__text--active{
+.command__item--active{
     .command__hidden{
         height: 100%;
     }

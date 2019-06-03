@@ -1,0 +1,42 @@
+.modal{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(47, 50, 52);
+    opacity: 0.99;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alegreya Sans;
+    display: none;
+}
+.modal__text{
+    font-size: 1.125rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+.modal__bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    flex-direction: column;
+    height: 10.7rem;
+    width: 18.75rem;
+}
+
+.modal__button{
+    color: #fff;
+    font-size: rem(19px);
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #0f5a47;
+    border: none;
+    border-radius: 2.6875rem;
+    padding: 1.125rem 2.5rem;    
+
+}
+
+         
