@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 10 of C:\course\CHOCCO\page\css\_misc\command.scss, in `tablets'
-        from line 10 of C:\course\CHOCCO\page\css\_misc\command.scss
+        on line 11 of C:\course\CHOCCO\page\css\_misc\command.scss, in `tablets'
+        from line 11 of C:\course\CHOCCO\page\css\_misc\command.scss
 
-5:     align-items: center;
 6:     justify-content: center;
 7:     background-color: #ffffff;
 8:     font-family: Alegreya Sans; 
-9:     z-index: 0;
-10:     @include tablets {
-11:     margin-bottom: 5rem;
-12:     margin-left: 2rem;
-13:     }
-14:     @include phones {
-15:         margin-left: 0rem;;
+9: 
+10:     margin-bottom: -7.5rem;
+11:     @include tablets {
+12:     margin-bottom: 5rem;
+13:     margin-left: 2rem;
+14:     height: 1040px;
+15:     }
+16:     @include phones {
 
 Backtrace:
-C:\course\CHOCCO\page\css\_misc\command.scss:10:in `tablets'
-C:\course\CHOCCO\page\css\_misc\command.scss:10
+C:\course\CHOCCO\page\css\_misc\command.scss:11:in `tablets'
+C:\course\CHOCCO\page\css\_misc\command.scss:11
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\course\CHOCCO\page\css\_misc\command.scss, in `tablets'\A         from line 10 of C:\course\CHOCCO\page\css\_misc\command.scss\A \A 5:     align-items: center;\A 6:     justify-content: center;\A 7:     background-color: #ffffff;\A 8:     font-family: Alegreya Sans; \A 9:     z-index: 0;\A 10:     @include tablets {\A 11:     margin-bottom: 5rem;\A 12:     margin-left: 2rem;\A 13:     }\A 14:     @include phones {\A 15:         margin-left: 0rem;;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 11 of C:\course\CHOCCO\page\css\_misc\command.scss, in `tablets'\A         from line 11 of C:\course\CHOCCO\page\css\_misc\command.scss\A \A 6:     justify-content: center;\A 7:     background-color: #ffffff;\A 8:     font-family: Alegreya Sans; \A 9: \A 10:     margin-bottom: -7.5rem;\A 11:     @include tablets {\A 12:     margin-bottom: 5rem;\A 13:     margin-left: 2rem;\A 14:     height: 1040px;\A 15:     }\A 16:     @include phones {"; }

@@ -7,14 +7,12 @@
     color: #ffffff;
     @include tablets {
       margin-bottom: 5rem;
+      min-height: 1024px;
   }
-  //@include phones {
- //   flex-direction: column-reverse;
- //   justify-content: center;
-  //  align-items: center;
- // }
-
-  }
+  @include phones {
+    min-height: 920px;
+ }
+}
 
   .welcome__content{
     display: flex;

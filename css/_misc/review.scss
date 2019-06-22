@@ -8,43 +8,35 @@
     align-items: center;
     text-align: center;
     background-color: #ffffff;
-    min-height: rem(810px);
-    margin-bottom: 5rem;
-  }
-  
-  .review-item{
-    position: relative;
-    display: flex;
-    background-color: #f8faf9;
-    text-align: left;
-    padding: 5%;
-    margin-bottom: rem(31px);
-    &::before {
-      content: '';
-    background-color: #ffffff;
-    width: rem(80px);
-    height: rem(80px);
-    border-radius: 50%;
-    position: absolute;
-    top: rem(-54px);
-    left: 45%;
-    }
-        
+    margin-bottom: -0.8125rem;
+    z-index: 0;
     @include tablets {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      width: 63%;
-      margin: auto;
-      padding-top: rem(70px);
-      margin-bottom: 2.7rem;
+      height: 980px;
       }
       @include phones {
-        width: 100%;
-        padding-top: 5rem;
-        margin-bottom: 2.7rem;
+        height: 980px;
       }
+
+    .section__header{
+      margin-bottom: 26.9375rem;
+      z-index: 1;
+      position: relative;
+      @include tablets {
+
+        margin-bottom: 45rem;
+        z-index: 1;
+        position: relative;
+        margin-top: 49px;
+        }
+        @include phones {
+          margin-bottom: 49rem;
+
+        }
+
+    }
   }
+  
+
 
     .review-item__photo{
       position: relative;
@@ -78,7 +70,7 @@
     margin-top: rem(10px);
     margin-bottom: rem(18px);
     @include tablets {
-      max-width: 55%;
+      max-width: 60%;
     }
     }
    
@@ -118,9 +110,11 @@
     align-items: center;
     width: 50%;
     margin: auto;
+    position: relative;
   }
   
   .review-autors__list-item {
+
     margin-right: rem(23px);
     &:last-child{
       margin-right: rem(0px);
@@ -138,13 +132,83 @@
     position: relative;
   }
   
-   .review-autors__list-photo--active{
+
+  .review-autors__list-item--active{
+   .review-autors__list-photo{
     border: rem(8px) solid #0f5a47;
     border-radius: 50%;
     width: rem(111px);
     height: rem(111px);
    }
-  
+   .review-item{
+display: flex;
+top: -24.3125rem;
+left: -14.625rem;
+@include tablets {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 126%;
+  margin: auto;
+  padding-top: rem(70px);
+  margin-bottom: 2.7rem;
+  top: -42rem;
+  left: -3rem;
+  height: 39.5rem;
+  }
+  @include phones {
+    width: 100%;
+    padding-top: 5rem;
+    margin-bottom: 2.7rem;
+    top: -46rem;
+    left: -8rem;
+    width: 201%;
+    height: 43.5rem;
+  }
+   }
+  }
+
+  .review-item{
+    position: absolute;
+    display: none;
+    background-color: #f8faf9;
+    text-align: left;
+    padding: 10%;
+    margin-bottom: rem(31px);
+    height: 21.875rem; 
+    width: 58.75rem;
+    top: -24.3125rem;
+    left: -14.625rem;
+    &::before {
+      content: '';
+    background-color: #ffffff;
+    width: rem(80px);
+    height: rem(80px);
+    border-radius: 50%;
+    position: absolute;
+    top: rem(-54px);
+    left: 45%;
+    }
+        
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      width: 63%;
+      margin: auto;
+      padding-top: rem(70px);
+      margin-bottom: 2.7rem;
+      top: -42rem;
+      left: -3rem;
+      }
+      @include phones {
+        width: 100%;
+        padding-top: 5rem;
+        margin-bottom: 2.7rem;
+      }
+  }
+
+
   .review__pattern-leaf{
   position: absolute;
   bottom: rem(-175px);
@@ -194,5 +258,27 @@
         max-height: 5.6875rem;
         top: -3rem;
         right: -1.75rem;
+      }
+  }
+
+  .review-item__block{
+    position: absolute;
+    display: flex;
+    text-align: left;
+    top: 15.6875rem;
+    left: 8.5rem;
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      width: 63%;
+      margin: auto;
+      padding-top: rem(70px);
+      margin-bottom: 2.7rem;
+      }
+      @include phones {
+        width: 100%;
+        padding-top: 5rem;
+        margin-bottom: 2.7rem;
       }
   }

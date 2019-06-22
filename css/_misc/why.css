@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 37 of C:\course\CHOCCO\page\css\_misc\why.scss, in `tablets'
-        from line 37 of C:\course\CHOCCO\page\css\_misc\why.scss
+        on line 10 of C:\course\CHOCCO\page\css\_misc\why.scss, in `tablets'
+        from line 10 of C:\course\CHOCCO\page\css\_misc\why.scss
 
-32:   .why-question__header{
-33:     color: #0d0d0d;
-34:     text-transform: uppercase;
-35:     font-size: rem(48px);
-36:     font-weight: bold;
-37:     @include tablets {
-38:       font-size: rem(48px);
-39:     }
-40:     @include phones {
-41:       font-size: rem(40px);
-42:     }
+5:     display: flex;
+6:     flex-direction: column;
+7:     justify-content: center;
+8:     align-items: center;
+9:     font-family: Alegreya Sans;
+10:     @include tablets {
+11:       height: 1180px;
+12:     }
+13:     @include phones {
+14:       height: 1100px;
+15:     }
 
 Backtrace:
-C:\course\CHOCCO\page\css\_misc\why.scss:37:in `tablets'
-C:\course\CHOCCO\page\css\_misc\why.scss:37
+C:\course\CHOCCO\page\css\_misc\why.scss:10:in `tablets'
+C:\course\CHOCCO\page\css\_misc\why.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 37 of C:\course\CHOCCO\page\css\_misc\why.scss, in `tablets'\A         from line 37 of C:\course\CHOCCO\page\css\_misc\why.scss\A \A 32:   .why-question__header{\A 33:     color: #0d0d0d;\A 34:     text-transform: uppercase;\A 35:     font-size: rem(48px);\A 36:     font-weight: bold;\A 37:     @include tablets {\A 38:       font-size: rem(48px);\A 39:     }\A 40:     @include phones {\A 41:       font-size: rem(40px);\A 42:     }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\course\CHOCCO\page\css\_misc\why.scss, in `tablets'\A         from line 10 of C:\course\CHOCCO\page\css\_misc\why.scss\A \A 5:     display: flex;\A 6:     flex-direction: column;\A 7:     justify-content: center;\A 8:     align-items: center;\A 9:     font-family: Alegreya Sans;\A 10:     @include tablets {\A 11:       height: 1180px;\A 12:     }\A 13:     @include phones {\A 14:       height: 1100px;\A 15:     }"; }

@@ -10,10 +10,10 @@ Error: Undefined mixin 'tablets'.
 7:     color: #ffffff;
 8:     @include tablets {
 9:       margin-bottom: 5rem;
-10:   }
-11:   //@include phones {
-12:  //   flex-direction: column-reverse;
-13:  //   justify-content: center;
+10:       min-height: 1024px;
+11:   }
+12:   @include phones {
+13:     min-height: 920px;
 
 Backtrace:
 C:\course\CHOCCO\page\css\_misc\welcome.scss:8:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 8 of C:\course\CHOCCO\page\css\_misc\welcome.scss, in `tablets'\A         from line 8 of C:\course\CHOCCO\page\css\_misc\welcome.scss\A \A 3:     display: flex;\A 4:     flex-direction: column;\A 5:     background-color: #61c4d9;\A 6:     font-family: Alegreya Sans;\A 7:     color: #ffffff;\A 8:     @include tablets {\A 9:       margin-bottom: 5rem;\A 10:   }\A 11:   //@include phones {\A 12:  //   flex-direction: column-reverse;\A 13:  //   justify-content: center;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 8 of C:\course\CHOCCO\page\css\_misc\welcome.scss, in `tablets'\A         from line 8 of C:\course\CHOCCO\page\css\_misc\welcome.scss\A \A 3:     display: flex;\A 4:     flex-direction: column;\A 5:     background-color: #61c4d9;\A 6:     font-family: Alegreya Sans;\A 7:     color: #ffffff;\A 8:     @include tablets {\A 9:       margin-bottom: 5rem;\A 10:       min-height: 1024px;\A 11:   }\A 12:   @include phones {\A 13:     min-height: 920px;"; }

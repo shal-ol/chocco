@@ -7,7 +7,12 @@
     justify-content: center;
     align-items: center;
     font-family: Alegreya Sans;
-    margin-top: rem(-25px);
+    @include tablets {
+      height: 1180px;
+    }
+    @include phones {
+      height: 1100px;
+    }
   
     svg{
       height: rem(70px);

@@ -4,6 +4,12 @@
       background-color:  #f8faf9;
       font-family: Alegreya Sans;
       color: #333333;
+      @include tablets {
+        height: 880px;
+      }
+      @include phones {
+        height: 890px;
+      }
 
 }
 
@@ -316,6 +322,8 @@ background-size: contain;
     right: 0rem;
     bottom: -22.8125rem;
     width: 12.25rem;
+    z-index: 1;
+
     @include tablets {
         right: 0rem;
         bottom: -12.812rem;
@@ -334,6 +342,8 @@ background-size: contain;
     right: 0.9375rem;
     bottom: -4.625rem;
     width: 8.4375rem;
+    z-index: 1;
+
     @include tablets {
   max-height: 5.3125rem;
   max-width: 6.375rem;

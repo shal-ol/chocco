@@ -11,6 +11,13 @@
     color: #0f5a47;
     flex-direction: column;
     font-size: rem(18.03px);
+    z-index: -2;
+    @include tablets {
+        height: 965px;
+        }
+        // @include phones {
+  
+        // }
   }
 
 

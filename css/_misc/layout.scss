@@ -20,15 +20,32 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
+        z-index: -5;
+
     }
 
 .wrapper{
     position: relative;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow: hidden;
     margin: 0 auto;
+    z-index: -5;
 
+    @include tablets {
+        overflow: auto;
+        min-height: 1024px;
+    }
+    @include phones {
+        overflow: auto;
+    }
+
+}
+
+.maincontent{
+    height: 100%;
+    width: 100%;
+    transition: transform 1s;
 }
 
 h1,
@@ -71,8 +88,7 @@ h6{
 
   .section{
     position: relative;
-    height: 100vh;
-    min-height: 650px;
+    height: 100%;
     align-items: center;
     @include tablets {
         height: 100%;
